@@ -1,0 +1,31 @@
+{
+  "assets": [
+    {
+      "file": "public/media/subject.webp",
+      "author": "Fatih Erden",
+      "source_url": "https://www.pexels.com/photo/tables-and-chairs-in-an-empty-restaurant-10398557/",
+      "download_url": "https://images.pexels.com/photos/10398557/pexels-photo-10398557.jpeg",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "verified_at": "2026-11-01T12:36:13.818942+00:00",
+      "source_sha256": "3cb9b3f940a7673517a484af94a8eca9488fbcf0ab4ac1777e17c6a6d585f09f",
+      "output_sha256": "ff82bdc06e3b5dde5b10892b1fc0bdbefe755dc1c8ae76cd2b94568893b2e4f7",
+      "source_dimensions": [
+        3280,
+        4928
+      ],
+      "width": 799,
+      "height": 1200,
+      "bytes": 92082,
+      "transformations": [
+        "EXIF orientation applied",
+        "RGB conversion",
+        "long edge resized to maximum 1200px",
+        "EXIF removed",
+        "WebP quality 85, method 6"
+      ],
+      "visual_review": "Inspeção visual da versão final: sem faces identificáveis, marcas visíveis ou dados pessoais legíveis. Recortes usados em Doca, Rubato e Fagulha para excluir marcas de equipamentos.",
+      "usage": "Imagem de ambientação em demonstração de portfólio; não é produto para revenda e não implica endosso."
+    }
+  ]
+}
