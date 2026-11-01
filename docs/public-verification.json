@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-01",
+  "demo": "https://cortejo-gustapaz.starrylinen.chatgpt.site",
+  "application_commit": "6fa93966d5137aba69be68d52058e78273cc87cd",
+  "automated_tests": 20,
+  "public_smoke": "passed",
+  "browser_flow": "passed",
+  "responsive_widths": [
+    390,
+    768
+  ],
+  "export": {
+    "filename": "cortejo.csv",
+    "bytes": 196,
+    "sha256": "29dc37320bbb50811fb482e03f657de0aa5b2e6908a3262d2aecc23f6a0a4b0c",
+    "structure": "passed"
+  }
+}
