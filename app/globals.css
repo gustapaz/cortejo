@@ -4,6 +4,20 @@
   src: url("/fonts/display.woff2") format("woff2");
   font-display: swap;
 }
+@media (max-width: 650px) {
+  .intro {
+    display: block;
+  }
+  .intro > span {
+    max-width: none;
+    margin: 0 0 22px;
+  }
+  .intro h1 {
+    min-width: 0;
+    font-size: clamp(47px, 15vw, 62px);
+    overflow-wrap: normal;
+  }
+}
 body {
   background: #f6f1e6;
   color: #624b3c;
@@ -320,5 +334,18 @@ footer button {
   }
   footer > span {
     width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .intro {
+    display: block;
+  }
+  .intro > span {
+    max-width: none;
+    margin: 0 0 22px;
+  }
+  .intro h1 {
+    min-width: 0;
+    font-size: clamp(47px, 15vw, 62px);
   }
 }

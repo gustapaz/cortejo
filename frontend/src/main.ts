@@ -15,7 +15,7 @@ const stage = canvasStage(
       started = performance.now();
     }
     const progress = t ? Math.min(1, (performance.now() - started) / 1100) : 1,
-      cols = r.tables.length === 4 ? 2 : r.tables.length,
+      cols = Math.min(r.tables.length, w < 500 ? 2 : 3),
       rows = Math.ceil(r.tables.length / cols),
       scale = Math.min(w / (cols * 220), h / (rows * 240), 1.25),
       radius = 57 * scale;
@@ -32,6 +32,7 @@ const stage = canvasStage(
       c.fill();
       c.stroke();
       c.fillStyle = "#73513b";
+      c.font = "12px Georgia";
       c.fillText(table.id, x, y - 3);
       c.font = "8px monospace";
       c.fillText(table.guests.length + "/" + table.capacity, x, y + 13);
@@ -49,13 +50,6 @@ const stage = canvasStage(
         c.fillStyle = "#fff9ed";
         c.font = `${12 * scale}px Georgia`;
         c.fillText(g.initial, gx, gy + 4 * scale);
-        c.fillStyle = "#5c4637";
-        c.font = `${9 * scale}px Georgia`;
-        c.fillText(
-          g.name,
-          x + Math.cos(ang) * (radius + 64 * scale),
-          y + Math.sin(ang) * (radius + 64 * scale) + 3,
-        );
       });
     });
     return progress < 1;
